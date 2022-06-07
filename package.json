@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Auzzie1790/chat_like_its_2010#readme",
   "dependencies": {
-    "websocket": "^1.0.34"
+    "websocket": "^1.0.34",
+    "ws": "^8.7.0"
   }
 }
