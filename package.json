@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Auzzie1790/chat_like_its_2010/issues"
   },
-  "homepage": "https://github.com/Auzzie1790/chat_like_its_2010#readme"
+  "homepage": "https://github.com/Auzzie1790/chat_like_its_2010#readme",
+  "dependencies": {
+    "websocket": "^1.0.34"
+  }
 }
