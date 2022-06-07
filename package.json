@@ -1,0 +1,19 @@
+{
+  "name": "chat_like_its_2010",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Auzzie1790/chat_like_its_2010.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Auzzie1790/chat_like_its_2010/issues"
+  },
+  "homepage": "https://github.com/Auzzie1790/chat_like_its_2010#readme"
+}
