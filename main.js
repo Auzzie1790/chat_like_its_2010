@@ -1,5 +1,5 @@
 //initialize websockets:
-var ws_uri = "ws://https://chat-like-its-2010.herokuapp.com/:9600";
+var ws_uri = "ws://https://chat-like-its-2010.herokuapp.com/:3002";
 var websocket = new WebSocket(ws_uri);
 
 
