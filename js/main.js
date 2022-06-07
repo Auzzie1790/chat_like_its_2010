@@ -1,8 +1,23 @@
 //initialize websockets:
-//var ws_uri = `ws://chat-like-its-2010.herokuapp.com/:3001`;
-var ws_uri = `ws://127.0.0.1:3001`;
+const port = process.env.PORT || 3001;
+//var ws_uri = `ws://chat-like-its-2010.herokuapp.com:3001`;
+var ws_uri = `ws://127.0.0.1:${port}`;
 var websocket = new WebSocket(ws_uri);
 
+
+function Username() {
+	var username = window.prompt("Enter your username:", "");
+
+	if (username.toString().length > 2) {
+		localStorage.setItem("username", username);
+	}
+	else {
+		alert("Your username must be at least two characters.");
+		Username();
+	}
+}
+
+Username();
 
 // on websocket open:
 websocket.onopen = function(event) {
