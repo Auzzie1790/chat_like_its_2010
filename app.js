@@ -5,10 +5,10 @@ var http = require("http");
 
 // local variables:
 var username = "You";
-var port = 9600;
+const port = process.env.PORT || 3001;
 
 
-// create server, and have listen on port 9600:
+// create server, and have listen on port 3001:
 var server = http.createServer();
 
 server.listen(port, function() {
