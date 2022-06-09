@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Auzzie1790/chat_like_its_2010#readme",
   "dependencies": {
     "express": "^4.18.1",
+    "express-session": "^1.17.3",
     "websocket": "^1.0.34"
   }
 }

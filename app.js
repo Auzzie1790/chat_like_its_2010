@@ -3,16 +3,32 @@ var websocket = require("websocket").server;
 var http = require("http");
 var path = require("path")
 var fs = require("fs");
+var express = require("express");
+const session = require("express-session");
+// TO-DO: UNCOMMENT THE FOLLOWING LINE ONCE THIS BRANCH AND THE SQL BRANCH GET MERGED
+//const SequelizeStore = require("connect-session-sequelize")(session.Store);
+
 // local variables:
-var express=require("express");
+const app = express();
 var username = "You";
 const port = process.env.PORT || 3001;
 
-const app = express();
-// create server, and have listen on port 3001:
-var server = http.createServer( app
+// create server, and have listen on the appropriate port:
+var server = http.createServer(app);
 
-);
+const sess = {
+    secret: "Super secret secret",
+    cookie: {},
+    resave: false,
+    saveUninitialized: true,
+// TO-DO: UNCOMMENT THE FOLLOWING THREE LINES ONCE THIS BRANCH AND THE SQL BRANCH GET MERGED
+    //store: new SequelizeStore({
+    //    db: sequelize
+    //})
+};
+
+app.use(session(sess));
+
 app.use(express.json())
 app.use(express.urlencoded({
     extended:true
