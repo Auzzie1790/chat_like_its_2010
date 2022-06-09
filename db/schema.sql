@@ -1,0 +1,7 @@
+CREATE TABLE chat_like_its_2010 (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(30) NOT NULL
+)
+
+
+
